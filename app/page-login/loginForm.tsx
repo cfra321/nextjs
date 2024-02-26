@@ -6,11 +6,12 @@
 import React, { useState, useEffect  } from 'react';
 import Swal from 'sweetalert2'; // Import SweetAlert
 import localData from './localDataLogin.json'; // Import local data
-
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
     const user = localData.find(user => user.username === username);
@@ -118,6 +119,11 @@ const LoginForm = () => {
     });
   };
 
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+
   return (
     <div className="max-w-md mx-auto mb-8 p-6 bg-white rounded-md shadow-md">
       <div className="mb-2 p-8 text-center">
@@ -144,11 +150,12 @@ const LoginForm = () => {
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-600">
-            Password
-          </label>
+        <label htmlFor="password" className="block text-sm font-medium text-gray-600">
+          Password
+        </label>
+        <div className="relative">
           <input
-            type="password"
+            type={showPassword ? 'text' : 'password'}
             id="password"
             name="password"
             className="mt-1 p-2 w-full border rounded-md"
@@ -156,7 +163,15 @@ const LoginForm = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+          <button
+            type="button"
+            onClick={togglePasswordVisibility}
+            className="absolute inset-y-0 right-0 px-2 py-1.5 mt-1.5 mr-2 text-gray-500 cursor-pointer"
+          >
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
+          </button>
         </div>
+      </div>
         <button
           type="button"
           className="w-full bg-blue-500 text-white p-2 rounded-md mb-4 hover:bg-blue-700"
