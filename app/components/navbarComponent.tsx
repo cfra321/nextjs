@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleLogout = () => {
         // Show SweetAlert confirmation
         Swal.fire({
-            title: 'Are you sure?',
+            title: 'Are you sure',
             text: 'You will be logged out!',
             icon: 'warning',
             showCancelButton: true,
