@@ -1,0 +1,73 @@
+/* postPage.module.css */
+
+.borderForm {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 21rem;
+  /* margin-right: auto; */
+}
+
+.navbar {
+  background-color: #1C90B5;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar h1 {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.contentBox {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.formContainer {
+  width: 100%; /* Ensure the form takes the full width of the container */
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formInput,
+.formTextarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formButton {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.formButton:hover {
+  background-color: #45a049;
+}

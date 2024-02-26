@@ -1,0 +1,21 @@
+[
+  {
+    "username": "kukuh",
+    "password": "1",
+    "isActive": true,
+    "createdAt": "2024-02-08T12:00:00Z"
+  },
+  {
+    "username": "kukuh1",
+    "password": "qwerty",
+    "isActive": false,
+    "createdAt": "2024-02-08T13:30:00Z"
+  },
+  {
+    "username": "cfra",
+    "password": "qwerty",
+    "isActive": true,
+    "createdAt": "2024-02-08T13:30:00Z"
+   
+  }
+]
