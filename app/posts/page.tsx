@@ -15,11 +15,13 @@ interface FormData {
   username: string;
   email: string;
   address: string;
+  phonenumber: string;
 }
 
 const Posts: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     username: '',
+    phonenumber: '',
     email: '',
     address: '',
   });
@@ -39,6 +41,7 @@ const Posts: React.FC = () => {
     const newPost = {
       id: localData.length + 1,
       username: formData.username,
+      phonenumber: formData.phonenumber,
       email: formData.email,
       address: formData.address,
     };
@@ -51,6 +54,7 @@ const Posts: React.FC = () => {
     // Clear the form data
     setFormData({
       username: '',
+      phonenumber: '',
       email: '',
       address: '',
     });
@@ -163,7 +167,18 @@ const Posts: React.FC = () => {
                   required
                 />
               </label>
-
+              <label className={styles.formLabel}>
+                Phone Number:
+                <input
+                  className={styles.formInput}
+                  type="tel"  // Change type to "tel" for phone number input
+                  name="phonenumber"
+                  value={formData.phonenumber}
+                  onChange={handleFormChange}
+                  pattern="[0-9]{10,}"  // You can add a pattern attribute to enforce numeric input
+                  required
+                />
+              </label>
               <label className={styles.formLabel}>
                 Email:
                 <input
@@ -195,6 +210,7 @@ const Posts: React.FC = () => {
           </div>
           <div>
             <ClientSideComponent />
+            
           </div>
         </div>
         <HomeFooter />

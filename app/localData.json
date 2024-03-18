@@ -1,17 +1,16 @@
 [
-    {
-      "id": 1,
-      "username": "Budi Setiawan",
-      "phonenumber":"082297334277",
-      "email": "budi.setiawan@amarbank.co.id",
-      "address": "Jl. Merdeka No. 123, Jakarta, 10100"
-    },
-    {
-      "id": 2,
-      "username": "Dewi Susanti",
-      "phonenumber":"082297334277",
-      "email": "dewi.susanti@amarbank.co.id",
-      "address": "Jl. Pahlawan No. 45, Bandung, 40123"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "username": "Budi Setiawan",
+    "phonenumber": "082297334277",
+    "email": "budi.setiawan@amarbank.co.id",
+    "address": "Jl. Merdeka No. 123, Jakarta, 10100"
+  },
+  {
+    "id": 2,
+    "username": "Dewi Susanti",
+    "phonenumber": "082297334277",
+    "email": "dewi.susanti@amarbank.co.id",
+    "address": "Jl. Pahlawan No. 45, Bandung, 40123"
+  }
+]
