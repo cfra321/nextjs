@@ -32,7 +32,7 @@ const LoginForm = () => {
             showConfirmButton: false,
             timer: 1500
           }).then(() => {
-            window.location.href = 'http://localhost:3000/posts';
+            window.location.href = 'https://my-crud-project-psi.vercel.app/posts';
           });
         } else {
           // Incorrect password
@@ -79,7 +79,7 @@ const LoginForm = () => {
             title: 'Session Expired',
             text: 'You have been logged out due to inactivity.'
           }).then(() => {
-            window.location.href = 'http://localhost:3000';
+            window.location.href = 'https://my-crud-project-psi.vercel.app';
           });
         }, timeRemaining);
         return () => clearTimeout(logoutTimer);
@@ -90,7 +90,7 @@ const LoginForm = () => {
           title: 'Session Expired',
           text: 'You have been logged out due to inactivity.'
         }).then(() => {
-          window.location.href = 'http://localhost:3000';
+          window.location.href = 'https://my-crud-project-psi.vercel.app';
         });
       }
     }
