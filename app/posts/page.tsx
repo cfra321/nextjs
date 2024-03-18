@@ -106,7 +106,7 @@ const Posts: React.FC = () => {
         text: 'Please contact support to activate your account.',
         timer: 3000
       }).then(() => {
-        window.location.href = 'http://localhost:3000';
+        window.location.href = 'https://my-crud-project-psi.vercel.app';
       });
       return;
     }
@@ -121,7 +121,7 @@ const Posts: React.FC = () => {
             title: 'User Not Active',
             text: 'Please contact support to activate your account.'
           }).then(() => {
-            window.location.href = 'http://localhost:3000'; // Redirect to login page using React Router
+            window.location.href = 'https://my-crud-project-psi.vercel.app'; // Redirect to login page using React Router
           });
         }, timeRemaining);
         return () => clearTimeout(logoutTimer);
@@ -132,7 +132,7 @@ const Posts: React.FC = () => {
           title: 'Session Expired',
           text: 'You have been logged out due to inactivity.'
         }).then(() => {
-          window.location.href = 'http://localhost:3000'; // Redirect to login page using React Router
+          window.location.href = 'https://my-crud-project-psi.vercel.app'; // Redirect to login page using React Router
         });
       }
     }
