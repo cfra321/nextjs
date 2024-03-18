@@ -25,7 +25,7 @@ const Navbar = () => {
                 localStorage.removeItem('isAuthenticated');
                 localStorage.removeItem('expirationTime');
                 // Redirect to the homepage
-                window.location.href = 'http://localhost:3000';
+                window.location.href = 'https://my-crud-project-psi.vercel.app';
             }
         });
     };
